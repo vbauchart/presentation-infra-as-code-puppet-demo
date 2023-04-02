@@ -10,9 +10,9 @@ class nginx (
     ensure => 'installed',
   }
 
-  file { '/etc/nginx/conf.d/default.conf':
+  file { '/etc/nginx/sites-enabled/default':
     content => template('nginx/default.conf.erb'),
-    mode    => '0640',
+    mode    => '0644',
     owner   => root,
   }
 

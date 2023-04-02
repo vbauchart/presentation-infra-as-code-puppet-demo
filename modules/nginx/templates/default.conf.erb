@@ -5,13 +5,10 @@ server {
 	listen <%= @port %>  default_server;
 	listen [::]:<%= @port %> default_server;
 
-	# Everything is a 404
-	location / {
-		return 404;
-	}
+	root /var/www/localhost/htdocs;
+	index index.html index.htm index.nginx-debian.html;
 
-	# You may need this to prevent return 404 recursion.
-	location = /404.html {
-		internal;
+	location / {
+		try_files $uri $uri/ =404;
 	}
 }

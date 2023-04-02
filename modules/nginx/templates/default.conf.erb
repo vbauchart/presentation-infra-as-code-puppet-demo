@@ -2,8 +2,8 @@
 # chance access to any other virtualhost.
 
 server {
-	listen <%= @nginx_port %>  default_server;
-	listen [::]:<%= @nginx_port %> default_server;
+	listen <%= @port %>  default_server;
+	listen [::]:<%= @port %> default_server;
 
 	# Everything is a 404
 	location / {

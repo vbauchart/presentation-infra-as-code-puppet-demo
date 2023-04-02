@@ -23,6 +23,7 @@
 		"vscode": {
 			"extensions": [
 				"puppet.puppet-vscode",
+				"vortizhe.simple-ruby-erb",
 			],
 			"settings": {
 				"files.trimTrailingWhitespace": true

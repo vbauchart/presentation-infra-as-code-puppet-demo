@@ -1,5 +1,7 @@
 
 node default {
 
-  include nginx
+  class { 'nginx':
+      port => 8081,
+  }
 }

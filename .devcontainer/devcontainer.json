@@ -23,7 +23,10 @@
 		"vscode": {
 			"extensions": [
 				"puppet.puppet-vscode",
-			]
+			],
+			"settings": {
+				"files.trimTrailingWhitespace": true
+			}
 		}
 	},
 

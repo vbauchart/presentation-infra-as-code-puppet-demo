@@ -6,4 +6,6 @@ RUN wget https://apt.puppet.com/puppet7-release-focal.deb && \
     apt install -y puppet-agent &&\
     apt clean
 
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin:/opt/puppetlabs/bin
+RUN ln -s /opt/puppetlabs/bin/puppet /usr/bin/ && \
+    ln -s /opt/puppetlabs/bin/facter /usr/bin/ && \
+    ln -s /opt/puppetlabs/bin/hiera /usr/bin/

@@ -3,5 +3,5 @@
 ## Run the demo
 
 ```
-$ sudo puppet apply --modulepath ./modules -v site.pp
+$ sudo puppet apply -t --modulepath ./modules -v site.pp
 ```

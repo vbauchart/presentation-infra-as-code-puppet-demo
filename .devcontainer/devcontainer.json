@@ -23,13 +23,13 @@
 		"vscode": {
 			"extensions": [
 				"puppet.puppet-vscode",
-				"vortizhe.simple-ruby-erb",
+				"vortizhe.simple-ruby-erb"
 			],
 			"settings": {
 				"files.trimTrailingWhitespace": true
 			}
 		}
-	},
+	}
 
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
